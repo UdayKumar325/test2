@@ -4,6 +4,11 @@ pageextension 50101 MyExtensionWithCust extends "Customer Card"
     {
         addafter(Address)
         {
+            field(FullName; Rec.FullName)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FullName field.', Comment = '%';
+            }
 
             field(FirstName; Rec.FirstName)
             {
@@ -15,6 +20,7 @@ pageextension 50101 MyExtensionWithCust extends "Customer Card"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the SecondName field.', Comment = '%';
             }
+            
         }
     }
 

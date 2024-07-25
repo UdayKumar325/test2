@@ -12,5 +12,9 @@ tableextension 50100 CustomerExten extends Customer
             Caption = 'SecondName';
             DataClassification = ToBeClassified;
         }
+        field(50102; FullName; code[30])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }

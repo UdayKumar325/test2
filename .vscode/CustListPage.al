@@ -4,6 +4,11 @@ pageextension 50103 CustomerListPage extends "Customer List"
     {
         addafter("Allow Multiple Posting Groups")
         {
+            field(FullName; Rec.FullName)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FullName field.', Comment = '%';
+            }
             field(SecondName; Rec.SecondName)
             {
                 ApplicationArea = All;
